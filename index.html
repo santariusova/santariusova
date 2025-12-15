@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santariusová — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== NAV ===== -->
+    <header class="nav-wrap">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <!-- CHANGE: logo image -->
+          <img class="nav-logo" src="logo.svg" alt="Santariusová logo" />
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about" data-i18n="nav_about">O MNĚ</a>
+          <a href="#projects" data-i18n="nav_projects">PROJEKTY</a>
+          <a href="#contact" data-i18n="nav_contact">KONTAKT</a>
+        </nav>
+
+        <div class="lang">
+          <button id="btnCZ" class="pill is-active" type="button">CZ</button>
+          <button id="btnEN" class="pill" type="button">EN</button>
+        </div>
+      </div>
+      <div class="nav-line"></div>
+    </header>
+
+    <main id="top">
+      <!-- ===== HERO ===== -->
+      <section class="hero" aria-label="Hero">
+        <!-- CHANGE: hero background photo -->
+        <div class="hero-bg" style="background-image: url('hero.png')"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <div class="hero-center">
+            <h1 class="hero-title">SANTARIUSOVA</h1>
+            <div class="hero-subtitle" data-i18n="hero_role">
+              Graphic Designer
+            </div>
+
+            <p class="p1 hero-text" data-i18n="hero_line">
+              Dávám chaosu řád. Značkám směr. Detailům prostor.
+            </p>
+
+            <a class="hero-scroll" href="#about" aria-label="Scroll to About">
+              <span class="chev" aria-hidden="true">⌄</span>
+            </a>
+          </div>
+
+          <!-- HERO socials (icons as SVG images) -->
+          <aside class="hero-social" aria-label="Social links">
+            <!-- CHANGE: href + icon src -->
+            <a
+              class="icon-link"
+              href="mailto:studio@santariusova.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="email.svg" alt="Email" />
+            </a>
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/kl%C3%A1ra-santariusov%C3%A1-330aa6230/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a
+              class="icon-link"
+              href="https://m.me/k.santariusova/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="messenger.png" alt="Behance" />
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <div class="section-label" data-i18n="label_about">O MNĚ</div>
+
+          <div class="content">
+            <h2 class="h2" data-i18n="about_title">JSEM KLÁRA SANTARIUSOVÁ</h2>
+
+            <p class="p1" data-i18n="about_p1">
+              Grafickému designu se profesionálně věnuji od roku 2021. Vizuální
+              základy mám ze studia grafiky, strategické myšlení ze studia
+              marketingu.
+            </p>
+            <p class="p1" data-i18n="about_p2">
+              Pohybuji se mezi brandem, tiskem, UI/UX a sociálními sítěmi.
+              Spolupracovala jsem s velkými značkami z Česka i zahraničí.
+            </p>
+            <p class="p1" data-i18n="about_p3">
+              Design je pro mě způsob, jak dát věcem tvar a řád.
+            </p>
+
+            <div class="about-block">
+              <div class="h3" data-i18n="about_services_title">
+                DEJME TVÉ VIZI TVÁŘ
+              </div>
+              <p class="p1" data-i18n="about_services_text">
+                od loga a identity,<br />
+                přes kampaně a bannery,<br />
+                až po tiskoviny a digitální komunikaci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section class="section" id="projects">
+        <div class="container section-grid">
+          <div class="section-label" data-i18n="label_projects">PROJEKTY</div>
+
+          <div class="content">
+            <div class="projects-grid">
+              <!-- CHANGE: project images + link -->
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Prim"
+                >
+                  <img src="prim.png" alt="Prim" />
+                </a>
+                <h3 class="h3">Prim</h3>
+                <p class="p1">
+                  Individualizace hodinek, tiskoviny, promo materiály, obalový
+                  design, PPC, videa
+                </p>
+              </article>
+
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Daniel Krhut"
+                >
+                  <img src="krhut.png" alt="Daniel Krhut" />
+                </a>
+                <h3 class="h3">Daniel Krhut</h3>
+                <p class="p1">Branding, tiskoviny, potisk oblečení</p>
+              </article>
+
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="SBD Havířov"
+                >
+                  <img src="sbd.png" alt="SBD Havířov" />
+                </a>
+                <h3 class="h3">SBD Havířov</h3>
+                <p class="p1">Polepy výloh, světelné reklamy</p>
+              </article>
+
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Hotel Troyer"
+                >
+                  <img src="troyer.png" alt="Hotel Troyer" />
+                </a>
+                <h3 class="h3">Hotel Troyer</h3>
+                <p class="p1">Tiskoviny, promo materiály, videa</p>
+              </article>
+
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Anett Photography"
+                >
+                  <img src="anett.png" alt="Anett Photography" />
+                </a>
+                <h3 class="h3">Anett Photography</h3>
+                <p class="p1">Logo, tiskoviny</p>
+              </article>
+
+              <article class="project-card">
+                <a
+                  class="project-img"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Online Casino"
+                >
+                  <img src="kasino.png" alt="Online Casino" />
+                </a>
+                <h3 class="h3">Online Casino</h3>
+                <p class="p1">
+                  CRM kampaně, promo bannery, newsletter design, automatizované
+                  kampaně, sociální sítě
+                </p>
+              </article>
+            </div>
+
+            <div class="projects-footer">
+              <div class="divider"></div>
+              <div class="more" data-i18n="projects_more">a mnoho dalších</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section" id="contact">
+        <div class="container section-grid">
+          <div class="section-label" data-i18n="label_contact">KONTAKT</div>
+
+          <div class="content">
+            <div class="contact-grid">
+              <div>
+                <h2 class="h2">
+                  <span data-i18n="contact_head_1">Chceš svůj design?</span>
+                  <span class="muted" data-i18n="contact_head_2">
+                    Pojďme ho vytvořit!</span
+                  >
+                </h2>
+
+                <form class="form" action="#" method="post">
+                  <input
+                    class="field"
+                    type="text"
+                    name="name"
+                    placeholder="Jméno a příjmení"
+                    data-i18n-ph="ph_name"
+                  />
+                  <input
+                    class="field"
+                    type="email"
+                    name="email"
+                    placeholder="Emailová adresa"
+                    data-i18n-ph="ph_email"
+                  />
+                  <textarea
+                    class="field field-area"
+                    name="message"
+                    rows="5"
+                    placeholder="Tvoje zpráva"
+                    data-i18n-ph="ph_message"
+                  ></textarea>
+
+                  <label class="consent">
+                    <input type="checkbox" />
+                    <span class="p1" data-i18n="consent"
+                      >Odesláním souhlasíš se zpracováním údajů</span
+                    >
+                  </label>
+
+                  <button class="btn" type="submit" data-i18n="send">
+                    ODESLAT
+                  </button>
+                </form>
+              </div>
+
+              <aside class="contact-info">
+                <div class="p1">
+                  <strong>Klara Santariusová, DiS.</strong><br />
+                  studio@santariusova.com<br />
+                  IČO: 11751355<br />
+                  Česká Republika, Ostrava
+                </div>
+
+                <div class="contact-icons" aria-label="Contact links">
+                  <!-- CHANGE: href + icon src -->
+                  <a
+                    class="icon-link"
+                    href="mailto:studio@santariusova.com"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="email.svg" alt="Email" />
+                  </a>
+                  <a
+                    class="icon-link"
+                    href="https://www.linkedin.com/in/kl%C3%A1ra-santariusov%C3%A1-330aa6230/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="linkedin.svg" alt="LinkedIn" />
+                  </a>
+                  <a
+                    class="icon-link"
+                    href="https://m.me/k.santariusova/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="messenger.png" alt="Behance" />
+                  </a>
+                </div>
+              </aside>
+            </div>
+
+            <div class="contact-divider"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== LOGOS ===== -->
+      <section class="logos">
+        <div class="container section-grid">
+          <div class="section-label" data-i18n="label_logos">
+            SPOLUPRACOVALA JSEM S
+          </div>
+
+          <div class="content">
+            <div class="logos-grid">
+              <!-- CHANGE: replace logo images -->
+              <img src="prim.svg" alt="Logo Prim" />
+              <img src="mpm.svg" alt="Logo MPM-Quality" />
+              <img src="empen.svg" alt="Logo empen" />
+              <img src="troyer.svg" alt="Logo hotel Troyer" />
+              <img src="sbd.svg" alt="Logo SBD Havířov" />
+              <img src="pustevny.svg" alt="Logo pustevny" />
+              <img src="anett.svg" alt="Logo Anett Photography" />
+              <img src="lb.svg" alt="Logo Lucky Block casino and sportsbook" />
+              <img src="ic.svg" alt="Logo Instant Casino" />
+              <img src="dk.svg" alt="Logo Daniel Krhut" />
+              <img src="gp.svg" alt="Logo Golden Panda" />
+              <img src="md.svg" alt="Logo Mega Dice" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-left">
+            <!-- CHANGE: footer logo (optional) -->
+            <img
+              class="footer-logo"
+              src="images/logo.svg"
+              alt="Santariusová logo"
+            />
+
+            <div class="p1">
+              © <span id="year"></span> Klára Santariusová<br />
+              studio@santariusova.com<br />
+              IČO: 11751355<br />
+              Czech Republic, Ostrava
+            </div>
+
+            <div class="footer-icons" aria-label="Footer links">
+              <!-- CHANGE: href + icon src -->
+              <a
+                class="icon-link"
+                href="mailto:studio@santariusova.com"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="images/icons/mail.svg" alt="Email" />
+              </a>
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/TVUJ-LINK"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="images/icons/linkedin.svg" alt="LinkedIn" />
+              </a>
+              <a
+                class="icon-link"
+                href="https://www.behance.net/TVUJ-LINK"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="images/icons/behance.svg" alt="Behance" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <!-- CHANGE: optional mascot image -->
+            <img class="mascot" src="images/mascot.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
