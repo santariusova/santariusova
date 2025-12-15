@@ -166,20 +166,12 @@ img {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  transform: scale(1.02);
 }
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    60% 60% at 50% 35%,
-    rgba(255, 255, 255, 0.12),
-    rgba(0, 0, 0, 0.65) 60%,
-    rgba(0, 0, 0, 0.9)
-  );
-}
+
+
+
 .hero-content {
   position: relative;
 }
@@ -206,23 +198,34 @@ img {
   color: var(--muted);
 }
 .hero-scroll {
+  margin: 16px auto 0;
   width: 42px;
   height: 22px;
-  margin: 0 auto;
+
   border: 1px solid var(--line);
   border-radius: 999px;
-  display: grid;
-  place-items: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   text-decoration: none;
   color: var(--text);
   opacity: 0.9;
 }
+
 .hero-scroll:hover {
   opacity: 1;
 }
-.chev {
-  transform: translateY(-1px);
+
+.hero-scroll .chev {
+  display: block;
+  font-size: 14px;     
+  line-height: 1;      
 }
+
+
+
 
 .hero-social {
   position: absolute;
@@ -384,47 +387,78 @@ img {
   background: rgba(217, 217, 217, 0.1);
 }
 .logos-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 18px 34px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+.logos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; /* prostor nad fotkou */
+}
+
 .logos-grid img {
-  max-height: 42px;
-  width: 100%;
-  object-fit: contain;
-  opacity: 0.85;
-  filter: grayscale(1);
+  max-width: 100%;  /* max-width je ideální pro responsivní design */
+  height: auto;
 }
-.logos-grid img:hover {
-  opacity: 1;
-}
+
 
 /* FOOTER */
 .footer {
   padding: 48px 0 60px;
 }
+
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  align-items: flex-end;
+  align-items: stretch;
 }
+
+/* LEFT BLOCK */
+.footer-left {
+  display: flex;
+  gap: 20px;
+}
+
+/* LOGO */
 .footer-logo {
-  height: 28px;
+  height: 36px;
   width: auto;
-  margin-bottom: 12px;
 }
+
+/* TEXT + ICONS */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ICONS DOLE */
 .footer-icons {
-  margin-top: 14px;
+  margin-top: auto;
   display: flex;
   gap: 14px;
 }
+
+.footer-icons img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.85;
+}
+
+.footer-icons img:hover {
+  opacity: 1;
+}
+
+/* RIGHT */
 .mascot {
   width: 54px;
   height: auto;
   opacity: 0.85;
 }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 980px) {
