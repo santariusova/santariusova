@@ -33,7 +33,6 @@
     <main id="top">
       <!-- ===== HERO ===== -->
       <section class="hero" aria-label="Hero">
-        <!-- CHANGE: hero background photo -->
         <div class="hero-bg" style="background-image: url('hero.png')"></div>
         <div class="hero-overlay"></div>
 
@@ -48,9 +47,10 @@
               Dávám chaosu řád. Značkám směr. Detailům prostor.
             </p>
 
-            <a class="hero-scroll" href="#about" aria-label="Scroll to About">
-              <span class="chev" aria-hidden="true">⌄</span>
-            </a>
+           <a class="hero-scroll" href="#about" aria-label="Scroll to About">
+  		<img src="sipka.svg" alt="" aria-hidden="true" />
+	   </a>
+
           </div>
 
           <!-- HERO socials (icons as SVG images) -->
@@ -329,77 +329,51 @@
 
           <div class="content">
             <div class="logos-grid">
-              <!-- CHANGE: replace logo images -->
-              <img src="prim.svg" alt="Logo Prim" />
-              <img src="mpm.svg" alt="Logo MPM-Quality" />
-              <img src="empen.svg" alt="Logo empen" />
-              <img src="troyer.svg" alt="Logo hotel Troyer" />
-              <img src="sbd.svg" alt="Logo SBD Havířov" />
-              <img src="pustevny.svg" alt="Logo pustevny" />
-              <img src="anett.svg" alt="Logo Anett Photography" />
-              <img src="lb.svg" alt="Logo Lucky Block casino and sportsbook" />
-              <img src="ic.svg" alt="Logo Instant Casino" />
-              <img src="dk.svg" alt="Logo Daniel Krhut" />
-              <img src="gp.svg" alt="Logo Golden Panda" />
-              <img src="md.svg" alt="Logo Mega Dice" />
+              <img src="logofooter.svg" alt="LogoFooter" />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ===== FOOTER ===== -->
-      <footer class="footer">
-        <div class="container footer-grid">
-          <div class="footer-left">
-            <!-- CHANGE: footer logo (optional) -->
-            <img
-              class="footer-logo"
-              src="images/logo.svg"
-              alt="Santariusová logo"
-            />
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
 
-            <div class="p1">
-              © <span id="year"></span> Klára Santariusová<br />
-              studio@santariusova.com<br />
-              IČO: 11751355<br />
-              Czech Republic, Ostrava
-            </div>
+    <!-- LEFT -->
+    <div class="footer-left">
 
-            <div class="footer-icons" aria-label="Footer links">
-              <!-- CHANGE: href + icon src -->
-              <a
-                class="icon-link"
-                href="mailto:studio@santariusova.com"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="images/icons/mail.svg" alt="Email" />
-              </a>
-              <a
-                class="icon-link"
-                href="https://www.linkedin.com/in/TVUJ-LINK"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="images/icons/linkedin.svg" alt="LinkedIn" />
-              </a>
-              <a
-                class="icon-link"
-                href="https://www.behance.net/TVUJ-LINK"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="images/icons/behance.svg" alt="Behance" />
-              </a>
-            </div>
-          </div>
+      <img class="footer-logo" src="logo.svg" alt="Santariusová logo" />
 
-          <div class="footer-right">
-            <!-- CHANGE: optional mascot image -->
-            <img class="mascot" src="images/mascot.png" alt="" />
-          </div>
+      <div class="footer-content">
+        <div class="p1">
+          © <span id="year"></span> Klára Santariusová<br />
+          studio@santariusova.com<br />
+          IČO: 11751355<br />
+          Czech Republic, Ostrava
         </div>
-      </footer>
+
+        <div class="footer-icons" aria-label="Footer links">
+          <a class="icon-link" href="mailto:studio@santariusova.com">
+            <img src="email.svg" alt="Email" />
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/TVUJ-LINK">
+            <img src="linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a class="icon-link" href="https://www.behance.net/TVUJ-LINK">
+            <img src="messenger.png" alt="Messenger" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <img class="mascot" src="images/mascot.png" alt="" />
+    </div>
+
+  </div>
+</footer>
     </main>
 
     <script src="main.js"></script>
