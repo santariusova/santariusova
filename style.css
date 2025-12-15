@@ -13,7 +13,7 @@
 }
 
 /* (Volitelné) vlož si fonty přes @font-face nebo Google Fonts */
-/*
+
 @font-face{
   font-family:"Archivo";
   src:url("fonts/Archivo-SemiBold.woff2") format("woff2");
@@ -24,7 +24,7 @@
   src:url("fonts/Arboria-Book.woff2") format("woff2");
   font-weight:400;
 }
-*/
+
 
 * {
   box-sizing: border-box;
@@ -122,22 +122,20 @@ img {
 }
 
 /* TYPO */
-.h2 {
-  margin: 0 0 14px 0;
+.h2,
+.h3 {
   font-family: Archivo, system-ui, sans-serif;
   font-weight: 600;
-  font-size: var(--h);
+  font-size: var(--h); /* 20px */
   letter-spacing: 0.06em;
 }
-.h3 {
-  margin: 0 0 8px 0;
-  font-family: Archivo, system-ui, sans-serif;
-  font-weight: 600;
-  font-size: var(--h);
-}
+
 .p1 {
+  font-family: Arboria, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: var(--p); /* 17px */
+  line-height: 1.55;
   margin: 0 0 10px 0;
-  font-size: var(--p);
   color: var(--text);
 }
 .muted {
