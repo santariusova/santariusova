@@ -39,7 +39,7 @@ const dict = {
     nav_contact: "CONTACT",
 
     hero_role: "Graphic Designer",
-    hero_line: "I bring order to chaos. Direction to brands. Space to details.",
+    hero_line: "I shape chaos.  I bring order to brands.  I leave space for detail.",
 
     label_about: "ABOUT",
     label_projects: "PROJECTS",
