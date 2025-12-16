@@ -5,7 +5,7 @@ const dict = {
     nav_contact: "KONTAKT",
 
     hero_role: "Graphic Designer",
-    hero_line: "Dávám chaosu řád. Značkám směr. Detailům prostor.",
+    hero_line: "I shape chaos.  I bring order to brands.  I leave space for detail.",
 
     label_about: "O MNĚ",
     label_projects: "PROJEKTY",
